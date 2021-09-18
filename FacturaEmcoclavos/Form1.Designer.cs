@@ -38,6 +38,8 @@ namespace FacturaEmcoclavos
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExportarExcel = new System.Windows.Forms.Button();
+            this.btnCalcularTotalesOperaciones = new System.Windows.Forms.Button();
+            this.btnCalcularFactura = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,9 +78,9 @@ namespace FacturaEmcoclavos
             this.btnAbrirExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrirExcel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAbrirExcel.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnAbrirExcel.Location = new System.Drawing.Point(905, 41);
+            this.btnAbrirExcel.Location = new System.Drawing.Point(672, 41);
             this.btnAbrirExcel.Name = "btnAbrirExcel";
-            this.btnAbrirExcel.Size = new System.Drawing.Size(153, 45);
+            this.btnAbrirExcel.Size = new System.Drawing.Size(153, 41);
             this.btnAbrirExcel.TabIndex = 1;
             this.btnAbrirExcel.Text = "Abrir Excel";
             this.btnAbrirExcel.UseVisualStyleBackColor = false;
@@ -91,9 +93,9 @@ namespace FacturaEmcoclavos
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnBuscar.Location = new System.Drawing.Point(533, 39);
+            this.btnBuscar.Location = new System.Drawing.Point(533, 41);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 43);
+            this.btnBuscar.Size = new System.Drawing.Size(119, 41);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -125,19 +127,51 @@ namespace FacturaEmcoclavos
             this.btnExportarExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExportarExcel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExportarExcel.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnExportarExcel.Location = new System.Drawing.Point(1078, 41);
+            this.btnExportarExcel.Location = new System.Drawing.Point(633, 659);
             this.btnExportarExcel.Name = "btnExportarExcel";
-            this.btnExportarExcel.Size = new System.Drawing.Size(192, 45);
+            this.btnExportarExcel.Size = new System.Drawing.Size(192, 41);
             this.btnExportarExcel.TabIndex = 5;
             this.btnExportarExcel.Text = "Exportar Excel";
             this.btnExportarExcel.UseVisualStyleBackColor = false;
             this.btnExportarExcel.Click += new System.EventHandler(this.btnExportarExcel_Click);
+            // 
+            // btnCalcularTotalesOperaciones
+            // 
+            this.btnCalcularTotalesOperaciones.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCalcularTotalesOperaciones.FlatAppearance.BorderSize = 0;
+            this.btnCalcularTotalesOperaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcularTotalesOperaciones.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCalcularTotalesOperaciones.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnCalcularTotalesOperaciones.Location = new System.Drawing.Point(1070, 659);
+            this.btnCalcularTotalesOperaciones.Name = "btnCalcularTotalesOperaciones";
+            this.btnCalcularTotalesOperaciones.Size = new System.Drawing.Size(200, 41);
+            this.btnCalcularTotalesOperaciones.TabIndex = 6;
+            this.btnCalcularTotalesOperaciones.Text = "Calcular Totales";
+            this.btnCalcularTotalesOperaciones.UseVisualStyleBackColor = false;
+            this.btnCalcularTotalesOperaciones.Click += new System.EventHandler(this.btnCalcularTotalesOperaciones_Click);
+            // 
+            // btnCalcularFactura
+            // 
+            this.btnCalcularFactura.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCalcularFactura.FlatAppearance.BorderSize = 0;
+            this.btnCalcularFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcularFactura.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCalcularFactura.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnCalcularFactura.Location = new System.Drawing.Point(847, 659);
+            this.btnCalcularFactura.Name = "btnCalcularFactura";
+            this.btnCalcularFactura.Size = new System.Drawing.Size(200, 41);
+            this.btnCalcularFactura.TabIndex = 7;
+            this.btnCalcularFactura.Text = "Calcular Factura";
+            this.btnCalcularFactura.UseVisualStyleBackColor = false;
+            this.btnCalcularFactura.Click += new System.EventHandler(this.btnCalcularFactura_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 856);
+            this.Controls.Add(this.btnCalcularFactura);
+            this.Controls.Add(this.btnCalcularTotalesOperaciones);
             this.Controls.Add(this.btnExportarExcel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -162,6 +196,8 @@ namespace FacturaEmcoclavos
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExportarExcel;
+        private System.Windows.Forms.Button btnCalcularTotalesOperaciones;
+        private System.Windows.Forms.Button btnCalcularFactura;
     }
 }
 
